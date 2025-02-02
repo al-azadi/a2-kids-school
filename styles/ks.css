@@ -143,30 +143,35 @@
 /* stories styles */
 .sis{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 .s{
     border: 2px solid gainsboro;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 .s-1{
     grid-row: span 2;
+    grid-column: span 2;
 }
+/* .s-2, .s-3, .s-4, .s-5{
+    margin: 50px;
+} */
 #btn-s{
-    padding: 5px;
+    padding: 15px;
     font-size: 1rem;
     font-weight: 500;
     margin-left: -100px;
-    margin-top: -500px;
+    margin-top: -900px;
     border-radius: 50px;
 }
 .s-i{
     width: 100%;
     height: 75%;
+    border-radius: 10px;
 }
 
 
