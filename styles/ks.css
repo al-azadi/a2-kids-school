@@ -13,6 +13,9 @@
 
 
 /* shared styles */
+.bg-c{
+    background-color: snow;
+}
 .bg{
     background-image: url(..assets/bg.png);
 }
@@ -31,6 +34,11 @@
     font-size: 1rem;
     font-weight: 500;
     border-radius: 8px;
+}
+.btn{
+    justify-content: center;
+    align-items: center;
+    margin: 60px calc(50% - 10px);
 }
 .c1{
     color: orange;
@@ -149,7 +157,6 @@
 .s{
     border: 2px solid gainsboro;
     border-radius: 10px;
-    text-align: center;
     justify-content: center;
     align-items: center;
 }
@@ -164,8 +171,8 @@
     padding: 15px;
     font-size: 1rem;
     font-weight: 500;
-    margin-left: -100px;
-    margin-top: -900px;
+    margin-right: -100px;
+    margin-top: -100px;
     border-radius: 50px;
 }
 .s-i{
