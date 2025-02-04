@@ -28,6 +28,9 @@
 .bg-c5{
     background-color: orchid;
 }
+.bg-i{
+    background-image: url('../bg.png');
+}
 .bg{
     background-image: linear-gradient(to bottom, white, white, white, orange);
 }
@@ -50,7 +53,7 @@
 .btn{
     justify-content: center;
     align-items: center;
-    margin: 60px calc(50% - 10px);
+    margin:60px calc(50% - 100px);
 }
 .c1{
     color: orange;
@@ -64,6 +67,9 @@
 .c4{
     color: rgba(93, 88, 239, 1);
 }
+.c5{
+    color: white;
+}
 .d{
     display: flex;
     justify-content: space-around;
@@ -72,19 +78,23 @@
     display: none;
 }
 
+.link{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
 /* nav styles */
 .title{
     font-size: 1.5rem;
     margin-left: 11px;
 }
-.nav-item{
+.nav-item , .f-item{
     list-style: none;
     margin-right: 30px;
 }
-.nav-link{
-    text-decoration: none;
-    font-weight: 500;
-}
+
+
 /* banner styles */
 .banner{
     align-items: center;
@@ -135,13 +145,13 @@
     text-overflow: ellipsis;
 }
 .grad-1 {
-    background-image: linear-gradient(to bottom, #ffebcc, #ffffff);
+    background-image: linear-gradient(to bottom, #ffebcc, white, white, #ffffff);
   }
 .grad-2 {
-    background-image: linear-gradient(to bottom,#e8f6ff, #ffffff);
+    background-image: linear-gradient(to bottom,#e8f6ff,  white, white, #ffffff);
   }
 .grad-3 {
-    background-image: linear-gradient(to bottom, #f5e8ff, #ffffff);
+    background-image: linear-gradient(to bottom, #f5e8ff, white, white, #ffffff);
 }
 .ar{
     display: flex;
@@ -196,6 +206,36 @@
 
 
 
+/* footer style */
+footer{
+    background-color: rgba(1, 172, 253, 1);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+}   
+.f-t{
+    margin: 200px 100px;
+}
+.f-t div, .f-icons{
+    display: flex;
+    gap: 10px;
+}
+.f-img{
+    width: 20%;
+    height: 20%;
+}
+.f-l{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
 /* responsive for small size */
 @media screen and (max-width:576px) {
     .banner{
@@ -231,6 +271,25 @@
     .ar{
         display: none;
     }
+    .sis{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .s-1{
+        display: none;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .f-t{
+        margin: 16px;
+        margin-top: 65px;
+    }
+    .f-endt, .f-c{
+        margin: 16px;
+    }
 }
 
 
@@ -258,5 +317,32 @@
     .crd{
         padding: 36px 28px;
         width: 305px;
+    }
+    .sis{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .s-1{
+        display: none;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .f-t{
+        margin: 65px 16px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .f-endt, .f-c{
+        margin: 20px 16px;
+    }
+    .f-l{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 }
