@@ -8,8 +8,15 @@
   }
 
 
-
-
+  marquee {
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
 
 
 /* shared styles */
@@ -335,6 +342,7 @@ footer{
     footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        margin: auto;
     }
     .f-t{
         margin: 65px 16px;
