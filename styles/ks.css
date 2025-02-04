@@ -202,6 +202,12 @@
     height: 75%;
     border-radius: 10px;
 }
+.stories h3{
+    font-size: 2.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
