@@ -13,11 +13,23 @@
 
 
 /* shared styles */
-.bg-c{
-    background-color: snow;
+.bg-c1{
+    background-color: orange ;
+}
+.bg-c2{
+    background-color: skyblue ;
+}
+.bg-c3{
+    background-color: chocolate;
+}
+.bg-c4{
+    background-color: crimson;
+}
+.bg-c5{
+    background-color: orchid;
 }
 .bg{
-    background-image: url(..assets/bg.png);
+    background-image: linear-gradient(to bottom, white, white, white, orange);
 }
 .btn-p{
     background-color: #FF900E;
